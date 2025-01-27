@@ -11,6 +11,7 @@ import GenreMovie from "./components/pages/GenreMovies";
 import GenreTv from "./components/pages/GenreTvs";
 import SignIn from "./components/pages/SignIn";
 import About from "./components/pages/About";
+import NotFound from "./components/pages/NotFound";
 
 export const router = createBrowserRouter([
   {
@@ -72,6 +73,10 @@ export const router = createBrowserRouter([
         path: "/about",
         Component: About,
       },
+      {
+        path: "/*",
+        Component: NotFound
+      }
     ],
   },
 ]);
